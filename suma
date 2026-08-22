@@ -1,0 +1,29 @@
+public class CalculadoraGitHub_22_08 {
+
+    public static void main(String[] args) {
+        calculadora c1=new calculadora();
+        c1.setVisible(true);
+    }
+}
+
+public class calculadora extends javax.swing.JFrame {
+    
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(calculadora.class.getName());
+int valoruno, valordos, resultado;
+
+    public calculadora() {
+        initComponents();
+    }
+
+private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        int valoruno=Integer.parseInt(jTextField1.getText());
+        int valordos=Integer.parseInt(jTextField2.getText());
+        
+        int resultado=valoruno+valordos;
+        
+        jLabel1.setText("Resultado: "+resultado);
+    }                                        
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        this.dispose();
+    }                                        
